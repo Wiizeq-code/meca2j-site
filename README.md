@@ -22,6 +22,5 @@ npx serve .
 ## À compléter avant la mise en ligne
 
 - Les horaires précis (repère `TODO` dans `index.html`)
-- Le capital, le RCS et le SIRET (dans `mentions-legales.html`)
 - Le fichier du logo (PNG ou SVG), pour remplacer le logo texte
 - Vérifier la grille tarifaire (relevée sur une photo de la vitrine)
