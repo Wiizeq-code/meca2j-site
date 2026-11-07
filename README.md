@@ -23,4 +23,3 @@ npx serve .
 
 - Les horaires précis (repère `TODO` dans `index.html`)
 - Le fichier du logo (PNG ou SVG), pour remplacer le logo texte
-- Vérifier la grille tarifaire (relevée sur une photo de la vitrine)
