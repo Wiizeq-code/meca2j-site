@@ -182,7 +182,7 @@ a { color: inherit; }
   align-items: center;
   margin-top: 56px;
 }
-.vehicles img { border-radius: var(--radius); aspect-ratio: 1; object-fit: cover; object-position: center bottom; width: 100%; }
+.vehicles img { border-radius: var(--radius); aspect-ratio: 3 / 4; object-fit: cover; object-position: center bottom; width: 100%; }
 .vehicles h3 { font-size: 2rem; }
 .vehicles p { color: var(--muted); }
 .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
