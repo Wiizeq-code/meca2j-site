@@ -1,6 +1,6 @@
 # Site vitrine MECA2J
 
-Site vitrine du garage MECA2J, ZAC du Plateau, 54630 Flavigny-sur-Moselle.
+Site vitrine du garage MECA2J, Zone du Plateau, 54630 Flavigny-sur-Moselle.
 
 Site statique en HTML et CSS, sans outil de construction.
 
