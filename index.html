@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MECA2J – Garage automobile à Flavigny-sur-Moselle | Entretien, réparation, diagnostic</title>
-  <meta name="description" content="MECA2J, garage automobile à Flavigny-sur-Moselle (54630) : entretien, réparation, diagnostic, réparation moteur et boîte de vitesses. Spécialiste utilitaire. Ouvert du lundi au samedi. 03 65 67 91 52.">
+  <meta name="description" content="MECA2J, garage automobile à Flavigny-sur-Moselle (54630) : entretien, réparation, diagnostic, réparation moteur et boîte de vitesses. Spécialiste utilitaire. Ouvert du lundi au vendredi, 7h30–12h30 et 13h30–18h30. 03 65 67 91 52.">
   <meta property="og:title" content="MECA2J – Garage automobile à Flavigny-sur-Moselle">
   <meta property="og:description" content="Entretien, réparation, diagnostic. Spécialiste utilitaire. Votre véhicule, notre expertise !">
   <meta property="og:image" content="assets/facade.jpg">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,6 +24,7 @@
     "slogan": "Votre véhicule, notre expertise !",
     "telephone": "+33365679152",
     "image": "assets/facade.jpg",
+    "logo": "assets/logo.png",
     "priceRange": "75 € – 95 € HT / heure",
     "address": {
       "@type": "PostalAddress",
@@ -31,10 +33,20 @@
       "addressLocality": "Flavigny-sur-Moselle",
       "addressCountry": "FR"
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:30",
+        "closes": "12:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "13:30",
+        "closes": "18:30"
+      }
+    ],
     "founder": [
       { "@type": "Person", "name": "Julien Vaudois" },
       { "@type": "Person", "name": "Jonathan Perney" }
@@ -46,7 +58,7 @@
 
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo" aria-label="MECA2J, accueil">MECA<span>2J</span></a>
+      <a href="#" class="logo" aria-label="MECA2J, accueil"><img src="assets/logo.png" alt="MECA2J" width="600" height="195"></a>
       <nav class="nav" aria-label="Navigation principale">
         <a href="#services">Services</a>
         <a href="#tarifs">Tarifs</a>
@@ -67,7 +79,7 @@
       <div class="container hero__inner">
         <p class="badge">Nouveau garage à Flavigny-sur-Moselle</p>
         <h1>Votre véhicule, <em>notre expertise&nbsp;!</em></h1>
-        <p class="hero__lead">Entretien, réparation et diagnostic de vos voitures, utilitaires et camping-cars. Ouvert du lundi au samedi, Zone du Plateau.</p>
+        <p class="hero__lead">Entretien, réparation et diagnostic de vos voitures, utilitaires et camping-cars. Ouvert du lundi au vendredi, Zone du Plateau.</p>
         <div class="hero__actions">
           <a href="tel:+33365679152" class="btn btn--accent">Appeler le garage</a>
           <a href="#tarifs" class="btn btn--ghost">Voir nos tarifs</a>
@@ -192,9 +204,8 @@
           </div>
           <div class="info">
             <h3>Horaires</h3>
-            <!-- TODO : ajouter les horaires précis (ex. 8h–12h / 14h–18h) -->
-            <p>Du lundi au samedi</p>
-            <p class="muted">Dimanche : fermé</p>
+            <p>Du lundi au vendredi<br>7h30 – 12h30 · 13h30 – 18h30</p>
+            <p class="muted">Samedi et dimanche : fermé</p>
           </div>
           <div class="info">
             <h3>Téléphone</h3>
