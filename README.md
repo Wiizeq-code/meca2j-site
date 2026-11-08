@@ -23,3 +23,6 @@ npx serve .
 
 - Les horaires précis (repère `TODO` dans `index.html`)
 - Le fichier du logo (PNG ou SVG), pour remplacer le logo texte
+- Mentions légales : l'adresse e-mail du garage (obligatoire)
+- Mentions légales : le téléphone de l'hébergeur GitHub (obligatoire)
+- Mentions légales : le médiateur de la consommation (recommandé)
