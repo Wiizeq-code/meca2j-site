@@ -185,6 +185,69 @@ a { color: inherit; }
 .vehicles img { border-radius: var(--radius); aspect-ratio: 3 / 4; object-fit: cover; object-position: center bottom; width: 100%; }
 .vehicles h3 { font-size: 2rem; }
 .vehicles p { color: var(--muted); }
+
+/* Carrousel « Nos spécialités » */
+.slider { margin-top: 56px; overflow: hidden; }
+.slider__track {
+  display: flex;
+  transition: transform .6s ease;
+}
+.slider__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin-top: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slider__track { transition: none; }
+}
+.slider__cta { margin-top: 8px; }
+.slider__slide {
+  gap: 0;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.slider__slide > div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 28px 28px 48px;
+}
+.slider__slide > div h3 { margin-top: 0; }
+.slider__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+.slider__arrow {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+.slider__arrow:hover { border-color: var(--accent); color: var(--accent); }
+.slider__dots { display: flex; gap: 10px; }
+.slider__dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--border);
+  cursor: pointer;
+  transition: width .3s, background .3s;
+}
+.slider__dot[aria-current="true"] { width: 28px; background: var(--accent); }
 .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .checks li { display: flex; align-items: center; gap: 10px; font-weight: 600; }
 .checks li::before {
@@ -293,6 +356,10 @@ a { color: inherit; }
   .split, .vehicles, .contact-grid { grid-template-columns: 1fr; gap: 28px; }
   .split__photo { aspect-ratio: 4 / 3; object-position: center 30%; }
   .vehicles img, .contact-grid__photo { aspect-ratio: 4 / 3; }
+  .vehicles img.vehicles__img--high { object-position: center 35%; }
+  .slider__slide { align-content: stretch; grid-template-rows: auto 1fr; gap: 0; padding: 12px; }
+  .slider__slide > div { justify-content: flex-start; padding: 24px 12px 12px; }
+  .slider__cta { margin-top: auto; }
   .gallery { gap: 10px; }
   .promises__inner { justify-content: flex-start; flex-direction: column; }
 }
