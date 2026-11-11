@@ -10,6 +10,7 @@ Site statique en HTML et CSS, sans outil de construction.
 - `style.css` : la mise en forme ; les couleurs se changent en haut du fichier
 - `mentions-legales.html` : les mentions légales, obligatoires en France
 - `assets/` : les images et l'icône
+- `robots.txt` et `sitemap.xml` : pour les moteurs de recherche (adresse https://meca2j.fr)
 
 ## Voir le site en local
 
