@@ -21,6 +21,4 @@ npx serve .
 
 ## À compléter avant la mise en ligne
 
-- Mentions légales : l'adresse e-mail du garage (obligatoire)
-- Mentions légales : le téléphone de l'hébergeur GitHub (obligatoire)
 - Mentions légales : le médiateur de la consommation (recommandé)
