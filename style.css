@@ -192,15 +192,23 @@ a { color: inherit; }
 .slider { margin-top: 56px; overflow: hidden; }
 .slider__track {
   display: flex;
-  transition: transform .6s ease;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.slider__track::-webkit-scrollbar { display: none; }
 .slider__slide {
   flex: 0 0 100%;
   min-width: 0;
   margin-top: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 @media (prefers-reduced-motion: reduce) {
-  .slider__track { transition: none; }
+  .slider__track { scroll-behavior: auto; }
 }
 .slider__cta { margin-top: 8px; }
 .slider__slide {
