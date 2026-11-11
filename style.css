@@ -27,6 +27,8 @@ body {
   background: var(--bg);
 }
 img { max-width: 100%; display: block; }
+/* Photos : pas de glisser-déposer ni de menu « Enregistrer » à l'appui long (iPhone) */
+img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 h1, h2, h3 {
   font-family: var(--font-title);
   font-weight: 700;
