@@ -356,7 +356,7 @@ a { color: inherit; }
 @media (max-width: 860px) {
   .nav { display: none; }
   .split, .vehicles, .contact-grid { grid-template-columns: 1fr; gap: 28px; }
-  .split__photo { aspect-ratio: 4 / 3; object-position: center 30%; }
+  .split__photo { aspect-ratio: 1; object-position: center 85%; }
   .vehicles img, .contact-grid__photo { aspect-ratio: 4 / 3; }
   .vehicles img.vehicles__img--high { object-position: center 35%; }
   .vehicles img.vehicles__img--top { object-position: center top; }
